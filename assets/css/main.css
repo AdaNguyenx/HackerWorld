@@ -99,20 +99,23 @@ html, body {
 
 /* for main page tab */
 body.main-page{
+    background-position: center;
   background-image:url("../images/earth.gif");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  min-height:100%
+    background-repeat: repeat-x;
+  /*-webkit-background-size: cover;*/
+  /*-moz-background-size: cover;*/
+  /*-o-background-size: cover;*/
+  /*background-size: cover;*/
+  /*!*width: 100%;*!*/
+  /*min-height:100%*/
+
 }
 
 .opaque{
-  background-color: rgba(128, 128, 128, 0.09); 
+  background-color: rgba(128, 128, 128, 0.09);
 }
 
-img.logos{ 
+img.logos{
   position:relative;
   height:auto;
   width:auto;
