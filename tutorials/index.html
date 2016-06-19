@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HackerPack</title>
+    <title>
+        HackerPack
+    </title>
+
+    <link rel="stylesheet"
+          href="../bower_components/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet"
+          href="../bower_components/bootstrap/dist/css/bootstrap-theme.css">
+
+    <link rel="stylesheet" href="../assets/css/tutorial.css">
+</head>
+<body>
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="../index.html" class="navbar-brand">
+                <span class="hred">Hacker</span>
+                <span class="hgreen">Pack</span>
+            </a>
+
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="../about.html">About</a>
+                </li>
+                <li>
+                    <a href="../onboarding.html">How It Works</a>
+                </li>
+                <li>
+                    <a href="#">Tutorials</a>
+                </li>
+                <li>
+                    <a href="../profile.html">My Profile</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main content -->
+<div class="container-fluid tutorials">
+    <h1> Tutorials </h1>
+
+    <div class="panel panel-primary text-center cc" onclick='changePage()'>
+        <div class="panel-body"> Web Development</div>
+    </div>
+
+    <!--<div class="panel panel-primary text-center cc" onclick='changePage()'>-->
+    <!--<div class="panel-body"> iOS Development</div>-->
+    <!--</div>-->
+
+    <!--<div class="panel panel-primary text-center cc" onclick='changePage()'>-->
+    <!--<div class="panel-body"> Android Development</div>-->
+    <!--</div>-->
+
+</div>
+
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+<script>
+    function changePage() {
+        document.location.href = "webDev/index.html";
+    }
+</script>
+
+</body>
+</html>

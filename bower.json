@@ -1,0 +1,20 @@
+{
+  "name": "HackerPack-mvp",
+  "authors": [
+    "Jaime5 <Jaime5@UMBC.edu>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

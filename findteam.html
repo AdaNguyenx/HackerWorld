@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HackerPack</title>
+
+    <link rel="stylesheet"
+          href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet"
+          href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="assets/css/tutorial.css">
+    <link rel="stylesheet" href="assets/css/web_tutorial.css">
+
+    <!-- ESRI API  -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+    <script src="https://js.arcgis.com/4.0/"></script>
+
+    <!-- INSERT ESRI -->
+    <style>
+    #viewDiv {
+        /*padding: 0;
+        margin: 0;*/
+        height: 100%;
+        width: 50%;
+    }
+
+    .button-container {
+        padding-top: 1%;
+        padding-left: 20%;
+    }
+    </style>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+    <script src="https://js.arcgis.com/4.0/"></script>
+
+    <script>
+        require([
+          "esri/Map",
+          "esri/views/MapView",
+          "dojo/domReady!"
+        ], function(Map, MapView){
+          var map = new Map({
+            basemap: "streets"
+          });
+          var view = new MapView({
+            container: "viewDiv",  // Reference to the scene div created in step 5
+            map: map,  // Reference to the map object created before the scene
+            zoom: 4,  // Sets the zoom level based on level of detail (LOD)
+            center: [15, 65]  // Sets the center point of view in lon/lat
+          });
+        });
+    </script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">
+                <span class="hred">Hacker</span>
+                <span class="hgreen">World</span>
+            </a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="findteam.html"> Find A Team</a>
+                </li>
+                <li>
+                    <a href="mentor.html"> Mentor A Team </a>
+                </li>
+                <li>
+                    <a href="profile.html"> My Profile </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main content -->
+
+    <div id="viewDiv"></div>
+
+
+    <!-- Trigger the modal with a button -->
+<div class = "button-container">
+<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal"> Ping! </button>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"> What hackathon are you going to? </h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <fieldset class="form-group">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Hackathon Name">
+          </fieldset>
+      </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2" data-dismiss="modal"> Find Hackers </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Second Modal -->
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"> Hackers Match </h4>
+      </div>
+      <div class="modal-body">
+
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+</html>

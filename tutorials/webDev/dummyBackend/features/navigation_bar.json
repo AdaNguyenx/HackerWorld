@@ -1,0 +1,31 @@
+{
+  "feature_name": "HTML Template",
+  "feature_descriptions": [
+    "This email form allows you to let visitors submit their email without having a backend",
+    "All submissions will go to the email of your choice"
+  ],
+  "number_of_code": 5,
+  "number_of_desc": 5,
+  "tutorial_panels": [
+    {
+      "code_0": "&lt;form accept-charset=&quot;UTF-8&quot; action=&quot;https://formspree.io/YOUR-EMAIL&ldquo; method=&quot;POST&quot; id=&quot;email-form&rdquo;&gt;",
+      "desc_0": "Change YOUR-EMAIL to your own email\nmethod: Post vs Get\nLearn more\nid: a unique name to identify the element"
+    },
+    {
+      "code_1": "&lt;div class = &quot;submit&quot;&gt; Name &lt;/div&gt;&lt;input type=&quot;text&quot; name=&quot;name&quot; required&gt;&lt;br/&gt;",
+      "desc_1": "Change YOUR-EMAIL to your own email\nmethod: Post vs Get\nLearn more\nid: a unique name to identify the element"
+    },
+    {
+      "code_2": "&lt;div class = &quot;submit&quot;&gt; Email &lt;/div&gt;&lt;input type=&quot;email&quot; name=&quot;email&quot; required&gt;",
+      "desc_2": "Change YOUR-EMAIL to your own email\nmethod: Post vs Get\nLearn more\nid: a unique name to identify the element"
+    },
+    {
+      "code_3": "&lt;input type=&quot;text&quot; name=&quot;_gotcha&quot; style=&quot;display:none&quot; /&gt;",
+      "desc_3": "Change YOUR-EMAIL to your own email\nmethod: Post vs Get\nLearn more\nid: a unique name to identify the element"
+    },
+    {
+      "code_4": "&lt;button type=&quot;submit&quot; value=&quot;Send&quot;&gt; Submit &lt;/button&gt; &lt;/form&gt;",
+      "desc_4": "Change YOUR-EMAIL to your own email\nmethod: Post vs Get\nLearn more\nid: a unique name to identify the element"
+    }
+  ]
+}
