@@ -12,6 +12,53 @@
           href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
     <link rel="stylesheet" href="assets/css/tutorial.css">
     <link rel="stylesheet" href="assets/css/web_tutorial.css">
+
+    <!-- ESRI API  -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+    <script src="https://js.arcgis.com/4.0/"></script>
+
+    <!-- INSERT ESRI -->
+    <style>
+    #viewDiv {
+        /*padding: 0;
+        margin: 0;*/
+        height: 100%;
+        width: 50%;
+    }
+
+    .button-container {
+        padding-top: 1%;
+        padding-left: 20%;
+    }
+
+    .hackers {
+        max-height:25%;
+        max-width:25%;
+    }
+    </style>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+    <script src="https://js.arcgis.com/4.0/"></script>
+
+    <script>
+        require([
+          "esri/Map",
+          "esri/views/MapView",
+          "dojo/domReady!"
+        ], function(Map, MapView){
+          var map = new Map({
+            basemap: "streets"
+          });
+          var view = new MapView({
+            container: "viewDiv",  // Reference to the scene div created in step 5
+            map: map,  // Reference to the map object created before the scene
+            zoom: 6,  // Sets the zoom level based on level of detail (LOD)
+            center: [-75, 40]  // Sets the center point of view in lon/lat
+          });
+        });
+
+    </script>
+
 </head>
 
 <body>
@@ -49,15 +96,90 @@
 </nav>
 
 <!-- Main content -->
-<!-- <div class="container container-table">
-    <div class="row vertical-center-row">
-        <div class="text-center col-md-8 col-md-offset-2">
-            <iframe width="640" height="480"
-                    src="https://www.youtube.com/embed/xstPFRwnZW4"
-                    frameborder="0" allowfullscreen></iframe>
-        </div>
+
+    <div id="viewDiv"></div>
+
+
+    <!-- Trigger the modal with a button -->
+<div class = "button-container">
+<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal"> Ping! </button>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"> What hackathon would you like to mentor in? </h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <fieldset class="form-group">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Hackathon Name">
+          </fieldset>
+      </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2" data-dismiss="modal"> Find Mentees </button>
+      </div>
     </div>
-</div> -->
+
+  </div>
+</div>
+
+
+<!-- Second Modal -->
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"> Mentees Match </h4>
+      </div>
+      <div class="modal-body">
+        <div class = "row text-center">
+        <div class = "col-md-6">
+            <img src="assets/images/Justin.jpg" class="img-responsive img-circle hackers center-block" alt="Cinque Terre">
+            <p> <b> Entrepreneur </b> </p>
+            <p> Interest: <b> Learning HTML </b> </p>
+        </div>
+
+        <div class = "col-md-6">
+            <img src="assets/images/Jaime.png" class="img-responsive img-circle hackers center-block" alt="Cinque Terre">
+            <p> <b> Developer </b> </p>
+            <p> Interest: <b> Learning Node.js </b> </p>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""></label>
+            </div>
+        </div>
+        </div>
+
+        <div class = "row text-center">
+        <div class = "col-md-6">
+            <img src="assets/images/Lois.jpg" class="img-responsive img-circle hackers center-block" alt="Cinque Terre">
+            <p> <b> Designer </b> </p>
+            <p> Interest: <b> Learning Java </b> </p>
+        </div>
+
+        <div class = "col-md-6">
+            <img src="assets/images/Linhchi.jpg" class="img-responsive img-circle hackers center-block" alt="Cinque Terre">
+            <p> <b> Developer </b> </p>
+            <p> Interest: <b> Learning Go </b> </p>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 
 <script src="bower_components/jquery/dist/jquery.js"></script>

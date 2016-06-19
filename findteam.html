@@ -30,6 +30,11 @@
         padding-top: 1%;
         padding-left: 20%;
     }
+
+    .hackers {
+        max-height:25%;
+        max-width:25%;
+    }
     </style>
 
     <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
@@ -47,11 +52,13 @@
           var view = new MapView({
             container: "viewDiv",  // Reference to the scene div created in step 5
             map: map,  // Reference to the map object created before the scene
-            zoom: 4,  // Sets the zoom level based on level of detail (LOD)
-            center: [15, 65]  // Sets the center point of view in lon/lat
+            zoom: 6,  // Sets the zoom level based on level of detail (LOD)
+            center: [-75, 40]  // Sets the center point of view in lon/lat
           });
         });
+
     </script>
+
 </head>
 
 <body>
@@ -136,7 +143,33 @@
         <h4 class="modal-title"> Hackers Match </h4>
       </div>
       <div class="modal-body">
+        <div class = "row text-center">
+        <div class = "col-md-6">
+            <img src="assets/images/Justin.jpg" class="img-responsive img-circle hackers center-block" alt="Cinque Terre">
+            <p> <b> Designer </b> </p>
+            <p> Going to: <b> AngelHack Brooklyn </b> </p>
+        </div>
 
+        <div class = "col-md-6">
+            <img src="assets/images/Jaime.png" class="img-responsive img-circle hackers center-block" alt="Cinque Terre">
+            <p> <b> Developer </b> </p>
+            <p> Going to: <b> AngelHack Brooklyn </b> </p>
+        </div>
+        </div>
+
+        <div class = "row text-center">
+        <div class = "col-md-6">
+            <img src="assets/images/Lois.jpg" class="img-responsive img-circle hackers center-block" alt="Cinque Terre">
+            <p> <b> Entrepreneur </b> </p>
+            <p> Going to: <b> AngelHack Berlin </b> </p>
+        </div>
+
+        <div class = "col-md-6">
+            <img src="assets/images/Linhchi.jpg" class="img-responsive img-circle hackers center-block" alt="Cinque Terre">
+            <p> <b> Developer </b> </p>
+            <p> Going to: <b> AngelHack Silicon Valley </b> </p>
+        </div>
+        </div>
         
       </div>
     </div>

@@ -99,7 +99,7 @@ html, body {
 
 /* for main page tab */
 body.main-page{
-  background-image:url("../images/main-background.jpg");
+  background-image:url("../images/earth.gif");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
