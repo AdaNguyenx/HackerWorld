@@ -14,6 +14,20 @@
           href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
+    <link href="path/to/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet">
+    <script src="path/to/bootstrap-editable/js/bootstrap-editable.min.js"></script>
+
+    <style>
+    .hackers {
+        max-height:25%;
+        max-width:25%;
+    }
+
+    .button-container {
+        padding-left:2%;
+    }
+    </style>
+
 </head>
 
 <body>
@@ -51,6 +65,46 @@
 </nav>
 
 <!-- Main content -->
+<!-- <div class = "row text-center">
+        <div class = "col-md-6">
+            <img src="assets/images/Justin.jpg" class="img-responsive img-circle hackers center-block" alt="Cinque Terre">
+            <p> <b> Entrepreneur </b> </p>
+            <p> Interest: <b> Learning HTML </b> </p>
+            <div class="checkbox">
+              <label><input type="checkbox" value=""></label>
+            </div>
+        </div>
+</div> -->
+
+
+<div class="container" style="padding-top: 60px;">
+  <h1 class="page-header"> Amy Tong </h1>
+  <div class="row">
+    <!-- left column -->
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="text-center">
+        <img src="assets/images/Amy.jpg" class="avatar img-circle img-thumbnail" alt="avatar">
+      </div>
+    </div>
+
+    <!-- edit form column -->
+    <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+      <h3>Personal info</h3>
+      <label class="col-lg-3 control-label">First name:</label><p> Amy </p>
+      <label class="col-lg-3 control-label">Last name:</label><p> Tong </p>
+      <label class="col-lg-3 control-label">Email:</label><p> amytong@gmail.com </p>
+      <label class="col-lg-3 control-label">Interest:</label><p> Learning HTML </p>
+      <label class="col-lg-3 control-label">Identify as:</label><p> Entrepreneur </p>
+      <label class="col-lg-3 control-label">Time Zone:</label><p> (GMT-05:00) Eastern Time (US &amp; Canada) </p>
+      <label class="col-lg-3 control-label">Username</label><p> amytong </p>
+      <div class = "button-container">
+      <a href="edit.html" class="btn btn-success" role="button"> Edit Profile </a>
+      </div>
+    </div>
+</div>
+</div>
+
+
 
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
